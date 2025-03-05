@@ -54,3 +54,10 @@ class Gameboard {
     return this.ships.every((ship) => ship.isSunk());
   }
 }
+
+class Player {
+  constructor(isComputer = false) {
+    this.isComputer = isComputer;
+    this.gameboard = new Gameboard();
+  }
+}
